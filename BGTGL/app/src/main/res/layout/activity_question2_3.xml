@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.doreopartners.bg_tgl.Question2_3">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:text="SECTION 2"
+            android:textSize="25dip"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 3. What are the most import things in maize farming to get a good yield?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ask follow up questions to clarify when is ”On Time” and what is ”Proper application”."
+            android:textSize="10dip" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Select good land" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Apply manure to land" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Prepare land properly" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Plant on time (before end of June)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Use good seed" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Correct plant spacing (20cm apart)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Weed farm on time, (10-14 days)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Apply first fertilizer application properly (Bury fertilizer)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Apply 1st fertilizer application on time ( 7-10 days)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionJ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Remould on time (4 to 6 weeks)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_optionK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Apply second fertilizer on time (4 to 6 weeks)" />
+
+        <CheckBox
+            android:id="@+id/qus2_3_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showother"
+            android:text="Other" />
+
+        <EditText
+            android:id="@+id/qus2_3other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:visibility="gone"
+            android:hint="Other" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveAns"
+                android:text="Save" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

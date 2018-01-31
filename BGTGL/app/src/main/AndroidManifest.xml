@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doreopartners.bg_tgl">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Permission: Allow application to connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".TGL_Info" />
+
+        <provider
+            android:name=".usersProvider"
+            android:authorities="com.example.provider.bg_tgl" />
+
+        <activity android:name=".ViewTgl" />
+        <activity android:name=".Question1" />
+        <activity android:name=".RecyclerViewThings" />
+        <activity android:name=".question1_2" />
+        <activity android:name=".Failure" />
+        <activity android:name=".Success" />
+        <activity android:name=".Question2_1" />
+        <activity android:name=".Question2_2" />
+        <activity android:name=".Question3_1" />
+        <activity android:name=".Question3_2" />
+        <activity android:name=".Question2_3" />
+        <activity android:name=".Home_page" />
+        <activity android:name=".Village" />
+        <activity android:name=".TFM_Schedule" />
+        <activity android:name=".Test" />
+        <activity android:name=".RescheduleTFM"></activity>
+    </application>
+
+</manifest>

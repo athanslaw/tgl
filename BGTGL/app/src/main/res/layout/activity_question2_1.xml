@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.doreopartners.bg_tgl.Question2_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:text="SECTION 2"
+            android:textSize="25dip"/>
+
+            <TextView
+                android:id="@+id/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 1. How will you select your group members?" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Trusted People" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="People I have worked with before" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Good farmers" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Can be influenced to follow advice and guidance" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Good land" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Hard working and serious person" />
+
+        <CheckBox
+            android:id="@+id/qus2_1_optionG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="Good team player" />
+
+            <CheckBox
+                android:id="@+id/qus2_1_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showother"
+                android:text="Other" />
+
+        <EditText
+            android:id="@+id/qus2_1other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:visibility="gone"
+            android:hint="Other"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <Button
+                android:id="@+id/saveAns2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveAns2_1"
+                android:text="Save" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
